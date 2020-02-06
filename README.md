@@ -28,6 +28,14 @@ py manage.py import
 
 Source : https://docs.djangoproject.com/fr/3.0/topics/migrations/
 
+Une fois le serveur lancé, la page d'acceuil par défaut présente une barre de recherche avec un bouton. Appuyer sur le bouton suffit pour rediriger vers les données affichées.
+
+Commande pour lancer le serveur (sous Windows 10):
+
+```
+py manage.py runserver
+```
+
 **Concernant les templates et l'intégration du HTML / CSS :**
 
 Cette partie de l'application est opérationnelle, mais pas reproductible. Les différentes parties qui composent la page HTML n'ont pas été organisés en composants. Les règles de css sont contenues dans deux fichiers css. Si dans la version actuelle du projet aucun conflit entre ces règles n'existent, l'organisation actuelle amène nécessairement à des conflits si on souhaite continuer à améliorer la partie front-end.
