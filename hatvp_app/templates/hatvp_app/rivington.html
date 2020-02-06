@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'hatvp_app/css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'hatvp_app/css/affichage.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Asap|Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Kikafékoi</title>
+</head>
+<body>
+    <header>
+        <div id="header-container">
+            <i class="material-icons" id="menu-burger">menu</i>
+            <a id="logo" href="/">Kikafékoi</a>
+            <p id="version">Alpha ONE v1.0.0</p>
+        </div>
+        <nav>
+            <a href="/tableau_blanc">Tableau blanc</a>
+        </nav>
+    </header>
+<body>
+    <main>
+        <h1>RIVINGTON</h1>
+        <p>RIVINGTON est un cabinet de conseils dont le Président est M LOTTEAU Laurent.</p>
+        <h1>Organigramme de RIVINGTON :</h1>
+        {% for item in items %}
+            <p>
+                {{item.collaborateur}} : {{item.fonction_collaborateur}}
+            </p>
+        {% endfor %}
+    </main>
+</body>
+</html>

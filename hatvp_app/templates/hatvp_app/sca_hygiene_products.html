@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'hatvp_app/css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'hatvp_app/css/affichage.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Asap|Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Kikafékoi</title>
+</head>
+<body>
+    <header>
+        <div id="header-container">
+            <i class="material-icons" id="menu-burger">menu</i>
+            <a id="logo" href="/">Kikafékoi</a>
+            <p id="version">Alpha ONE v1.0.0</p>
+        </div>
+        <nav>
+            <a href="/tableau_blanc">Tableau blanc</a>
+        </nav>
+    </header>
+<body>
+    <main>
+        {% for item in items %}
+        <h1>{{item.denomination}}</h1>
+            <p>
+                {{item.denomination}} est un {{item.label_categorie_organisation}} dont le {{item.fonction_dirigeant}} est {{item.dirigeant}}.
+            </p>
+        {% endfor %}
+    </main>
+</body>
+</html>

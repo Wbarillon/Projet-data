@@ -1,0 +1,19 @@
+main {
+    width: 50%;
+    margin: auto;
+}
+
+ #white-board {
+    width: 80%;
+    background-color: white;
+ }
+
+h1 {
+    text-align: center;
+    margin: 5vh;
+    font-size: 2.5rem;
+}
+
+main p {
+    font-size: 1.6rem;
+}
